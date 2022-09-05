@@ -1,14 +1,9 @@
 import time
-
-
-
 from settings import Start_NodeID, URL
 from opcua import Client
 import asyncio
 import asyncua
-
 from asyncua import Client
-
 
 async def connect():
     async with Client(URL) as client:
